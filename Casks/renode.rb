@@ -13,5 +13,7 @@ cask 'renode' do
     strategy :github_latest
   end
 
+  depends_on formula: "mono"
+
   app 'Renode.app'
 end
