@@ -1,17 +1,15 @@
 cask 'kathara' do
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
-#  choice = Hardware::CPU.intel? ? "x86" : "arm"
 
-  version '3.5.0'
+  version '3.5.1'
   if Hardware::CPU.intel?
-    sha256 '5f2ffe1e45eafc2b0d329af80b009089ea15f0e57180792da2322cfb226eeae7'
+    sha256 '1302a33f63f91835a96d7413791d8bbc68779a31015ce872f60cdda44de93dc5'
   else
-    sha256 'b6b5b210034d9c488a72b57f26ea9e356e3df04c7e364e8c960f46449008d7e4'
+    sha256 '4c3570a188fad80b501afd830f97a23c3f3c729cc0abe51d0420dfd7a4b478b7'
   end
 
   url "https://github.com/KatharaFramework/Kathara/releases/download/#{version}/Kathara-macos-installer-#{arch}-#{version}.pkg",
       verified: "github.com/KatharaFramework/Kathara/"
-  #appcast 'https://github.com/KatharaFramework/Kathara/releases'
   name 'Kathara'
   desc "A lightweight container-based network emulation system"
   homepage 'https://www.kathara.org'
