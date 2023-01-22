@@ -1,11 +1,11 @@
 cask 'kathara' do
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
 
-  version '3.5.1'
+  version '3.5.5'
   if Hardware::CPU.intel?
-    sha256 '1302a33f63f91835a96d7413791d8bbc68779a31015ce872f60cdda44de93dc5'
+    sha256 'eea5c951a3365d9921c824341612fe7ad40db5982a182fda37916e086930cc7a'
   else
-    sha256 '4c3570a188fad80b501afd830f97a23c3f3c729cc0abe51d0420dfd7a4b478b7'
+    sha256 'e2583c03e3989a8bb05239637b18a5bd25f7df093cd9354c60bff1f7d263f007'
   end
 
   url "https://github.com/KatharaFramework/Kathara/releases/download/#{version}/Kathara-macos-installer-#{arch}-#{version}.pkg",
