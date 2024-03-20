@@ -1,6 +1,6 @@
 cask 'renode' do
-  version '1.13.2'
-  sha256 '076f33ba16f7b8fee35b3105c7a71e96d5643fd8b12e2da38d18f431a360c28b'
+  version '1.15.0'
+  sha256 '653de0a549291ac2216b8822b6e1879ea13309fb222f2ec8de9f6ce7dd15b471'
 
   url "https://github.com/renode/renode/releases/download/v#{version}/renode_#{version}.dmg",
       verified: "github.com/renode/renode/"
