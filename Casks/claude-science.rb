@@ -7,8 +7,6 @@ cask "claude-science" do
   desc "Anthropic's AI workbench for scientific research"
   homepage "https://www.anthropic.com/news/claude-science-ai-workbench"
 
-  auto_updates true
-
   depends_on arch: :arm64
   depends_on macos: :ventura
 
