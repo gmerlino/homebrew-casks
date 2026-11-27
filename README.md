@@ -11,6 +11,35 @@ brew install https://raw.githubusercontent.com/gmerlino/homebrew-casks/master/<c
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/share/doc/homebrew#readme).
 
+## Mechvibes 3
+
+Mechvibes 3 replaces both MechvibesDX and the original Mechvibes 2 app.
+This tap provides version 3.5.11 for Apple Silicon and Intel, on macOS 11 or later.
+Use the fully qualified cask name to select this tap instead of Homebrew's official cask:
+
+```sh
+brew update
+brew install --cask gmerlino/casks/mechvibes
+```
+
+Existing `gmerlino/casks/mechvibes-dx` installations are renamed through
+`cask_renames.json`. Quit MechvibesDX, then upgrade with:
+
+```sh
+brew update
+brew upgrade --cask gmerlino/casks/mechvibes
+```
+
+If the original `homebrew/cask/mechvibes` is installed, uninstall that cask
+without `--zap` before installing this tap's cask. Normal uninstall preserves
+settings and sound packs; `--zap` removes them.
+
+The app is now `Mechvibes.app`, but upstream retains the
+`com.hainguyents13.mechvibesdx` bundle identifier and existing data directory.
+The upstream binaries are ad-hoc signed, not notarized; see the
+[official macOS instructions](https://github.com/hainguyents13/mechvibes/blob/v3.5.11/README-macos.txt)
+if macOS blocks opening the app.
+
 ## Ebook and Jupyter Quick Look extensions
 
 ```sh
